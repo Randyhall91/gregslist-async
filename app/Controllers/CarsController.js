@@ -16,7 +16,7 @@ function drawCars() {
 export class CarsController {
   constructor() {
     appState.on('cars', drawCars)
-    this.showCars()
+    // this.showCars()
   }
 
   async getCars() {

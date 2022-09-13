@@ -23,7 +23,6 @@ class CarsService {
     appState.emit('cars')
 
     // this.getCars() // DONT its the lazyboy recliner approach also data limit problems exist here
-
   }
 
   setActiveCar(id) {

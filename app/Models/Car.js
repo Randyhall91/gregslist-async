@@ -45,6 +45,10 @@ export class Car {
     editable = editable || new Car({ description: '', imgUrl: ' ', make: '', model: '', price: 0, year: 1990 })
 
     return /*html*/`
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="rightBarLabel">Edit Car</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
       <form onsubmit="app.carsController.handleSubmit()">
         <div class="form-floating mb-3">
           <input type="text" class="form-control" name="make" required minlength="3" maxlength="20" value="${editable.make}">

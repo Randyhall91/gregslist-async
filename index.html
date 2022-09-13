@@ -23,8 +23,8 @@
           loading="lazy">
         <span class="ms-2">Gregslist</span>
       </a>
-      <div class="d-flex justify-content-between w-100 pe-3">
-        <div class="nav-links d-flex gap-3 ms-3">
+      <div class="d-flex w-100 pe-3">
+        <div class="nav-links d-flex gap-3 ms-3 me-auto">
           <!-- TODO future Problem learn to use SPA links -->
           <div>
             <h6 class="mb-0 selectable p-2 rounded" onclick="app.carsController.showCars()">Cars</h6>
@@ -33,11 +33,21 @@
             <h6 class="mb-0 selectable p-2 rounded" onclick="app.jobsController.showJobs()">Jobs</h6>
           </div>
           <div>
-            <h6 class="mb-0 selectable p-2 rounded">Houses</h6>
+            <h6 class="mb-0 selectable p-2 rounded" onclick="app.housesController.showHouses()">Houses</h6>
           </div>
         </div>
+
+        <div class="mx-2">
+          <button class="btn btn-outline-light" data-bs-toggle="offcanvas" data-bs-target="#rightBar"
+            onclick="app.housesController.addHouse()">🏠 Add House</button>
+        </div>
+        <div class="mx-2">
+          <button class="btn btn-outline-light" data-bs-toggle="offcanvas" data-bs-target="#rightBar"
+            onclick="app.carsController.addCar()">🚗 Add Car</button>
+        </div>
         <div>
-          <button class="btn btn-outline-light" data-bs-toggle="offcanvas" data-bs-target="#rightBar" onclick="app.carsController.addCar()">🚗 Add Car</button>
+          <button class="btn btn-outline-light" data-bs-toggle="offcanvas" data-bs-target="#rightBar"
+            onclick="app.jobsController.addJob()">⚒️ Add Job</button>
         </div>
       </div>
     </nav>
@@ -53,10 +63,10 @@
 
 
   <div class="offcanvas offcanvas-end" tabindex="-1" id="rightBar" aria-labelledby="rightBarLabel">
-    <div class="offcanvas-header">
+    <!-- <div class="offcanvas-header">
       <h5 class="offcanvas-title" id="rightBarLabel">Edit Car</h5>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
+    </div> -->
     <div class="offcanvas-body" id="forms">
       <!-- INJECT APPROPRIATE FORMS HERE FOR JOBS CARS ECT... -->
 

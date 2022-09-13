@@ -46,7 +46,7 @@ export class Car {
 
     return /*html*/`
     <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="rightBarLabel">Edit Car</h5>
+      <h5 class="offcanvas-title" id="rightBarLabel">${editable.id ? 'Edit Car' : 'Make Car'}</h5>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
       <form onsubmit="app.carsController.handleSubmit()">

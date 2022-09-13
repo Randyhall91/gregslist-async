@@ -47,7 +47,7 @@ export class Job {
 
     return/*html*/`
     <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="rightBarLabel">Edit Job</h5>
+      <h5 class="offcanvas-title" id="rightBarLabel">${editable.id ? 'Edit Job' : 'Make Job'}</h5>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <form onsubmit="app.jobsController.handleSubmit()">

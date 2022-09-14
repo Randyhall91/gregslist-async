@@ -76,7 +76,7 @@ export class House {
           <label for="year">Year</label>
         </div>
         <div class="form-floating mb-3">
-          <input type="number" class="form-control" name="imgUrl" required min="10" max="9999" value='${editable.imgUrl}'>
+          <input type="text" class="form-control" name="imgUrl" value='${editable.imgUrl}'>
           <label for="imgUrl">Image Link</label>
         </div>
 
